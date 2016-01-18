@@ -1,0 +1,314 @@
+
+game.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 1, 381
+  size: 640, 640
+  orig: 640, 640
+  offset: 0, 0
+  index: -1
+bullet-normal
+  rotate: false
+  xy: 1, 17
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+bullet-red
+  rotate: false
+  xy: 63, 35
+  size: 77, 42
+  orig: 77, 42
+  offset: 0, 0
+  index: -1
+enemy-attacker
+  rotate: false
+  xy: 1556, 623
+  size: 120, 114
+  orig: 120, 114
+  offset: 0, 0
+  index: -1
+enemy-bomb
+  rotate: false
+  xy: 708, 219
+  size: 119, 160
+  orig: 119, 160
+  offset: 0, 0
+  index: -1
+enemy-comm
+  rotate: false
+  xy: 829, 301
+  size: 140, 146
+  orig: 140, 146
+  offset: 0, 0
+  index: -1
+enemy-mine
+  rotate: false
+  xy: 1820, 741
+  size: 130, 129
+  orig: 130, 129
+  offset: 0, 0
+  index: -1
+enemy-ship
+  rotate: false
+  xy: 957, 472
+  size: 130, 140
+  orig: 130, 140
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 1940, 883
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+heart
+  rotate: false
+  xy: 1180, 870
+  size: 150, 151
+  orig: 150, 151
+  offset: 0, 0
+  index: -1
+jupiter
+  rotate: false
+  xy: 1292, 734
+  size: 130, 134
+  orig: 130, 134
+  offset: 0, 0
+  index: -1
+luna
+  rotate: false
+  xy: 1424, 738
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+marte
+  rotate: false
+  xy: 465, 1
+  size: 130, 126
+  orig: 130, 126
+  offset: 0, 0
+  index: -1
+meteorito1
+  rotate: false
+  xy: 825, 449
+  size: 130, 163
+  orig: 130, 163
+  offset: 0, 0
+  index: -1
+meteorito2
+  rotate: false
+  xy: 1292, 629
+  size: 130, 103
+  orig: 130, 103
+  offset: 0, 0
+  index: -1
+meteorito3
+  rotate: false
+  xy: 1556, 739
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+meteorito4
+  rotate: false
+  xy: 1170, 728
+  size: 120, 137
+  orig: 120, 137
+  offset: 0, 0
+  index: -1
+mothership
+  rotate: false
+  xy: 1, 79
+  size: 300, 300
+  orig: 300, 300
+  offset: 0, 0
+  index: -1
+planet9
+  rotate: false
+  xy: 1424, 615
+  size: 130, 121
+  orig: 130, 121
+  offset: 0, 0
+  index: -1
+planeta1
+  rotate: false
+  xy: 1788, 872
+  size: 150, 149
+  orig: 150, 149
+  offset: 0, 0
+  index: -1
+planeta10
+  rotate: false
+  xy: 971, 48
+  size: 140, 138
+  orig: 140, 138
+  offset: 0, 0
+  index: -1
+planeta11
+  rotate: false
+  xy: 1636, 871
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+planeta2
+  rotate: false
+  xy: 1484, 871
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+planeta3
+  rotate: false
+  xy: 1332, 870
+  size: 150, 151
+  orig: 150, 151
+  offset: 0, 0
+  index: -1
+planeta4
+  rotate: false
+  xy: 829, 159
+  size: 140, 140
+  orig: 140, 140
+  offset: 0, 0
+  index: -1
+planeta5
+  rotate: false
+  xy: 1688, 739
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+planeta6
+  rotate: false
+  xy: 809, 16
+  size: 140, 141
+  orig: 140, 141
+  offset: 0, 0
+  index: -1
+planeta7
+  rotate: false
+  xy: 826, 614
+  size: 150, 106
+  orig: 150, 106
+  offset: 0, 0
+  index: -1
+planeta8
+  rotate: false
+  xy: 971, 330
+  size: 140, 140
+  orig: 140, 140
+  offset: 0, 0
+  index: -1
+player-ship
+  rotate: false
+  xy: 826, 722
+  size: 179, 129
+  orig: 179, 129
+  offset: 0, 0
+  index: -1
+powerup
+  rotate: false
+  xy: 1940, 945
+  size: 80, 76
+  orig: 80, 76
+  offset: 0, 0
+  index: -1
+ship1
+  rotate: false
+  xy: 826, 853
+  size: 200, 168
+  orig: 200, 168
+  offset: 0, 0
+  index: -1
+ship10
+  rotate: false
+  xy: 556, 235
+  size: 150, 144
+  orig: 150, 144
+  offset: 0, 0
+  index: -1
+ship11
+  rotate: false
+  xy: 657, 102
+  size: 150, 115
+  orig: 150, 115
+  offset: 0, 0
+  index: -1
+ship2
+  rotate: false
+  xy: 303, 149
+  size: 200, 110
+  orig: 200, 110
+  offset: 0, 0
+  index: -1
+ship3
+  rotate: false
+  xy: 971, 188
+  size: 140, 140
+  orig: 140, 140
+  offset: 0, 0
+  index: -1
+ship4
+  rotate: false
+  xy: 1028, 725
+  size: 140, 140
+  orig: 140, 140
+  offset: 0, 0
+  index: -1
+ship5
+  rotate: false
+  xy: 643, 381
+  size: 180, 302
+  orig: 180, 302
+  offset: 0, 0
+  index: -1
+ship6
+  rotate: false
+  xy: 505, 129
+  size: 150, 104
+  orig: 150, 104
+  offset: 0, 0
+  index: -1
+ship7
+  rotate: false
+  xy: 643, 685
+  size: 181, 336
+  orig: 181, 336
+  offset: 0, 0
+  index: -1
+ship8
+  rotate: false
+  xy: 1028, 867
+  size: 150, 154
+  orig: 150, 154
+  offset: 0, 0
+  index: -1
+ship9
+  rotate: false
+  xy: 303, 58
+  size: 160, 89
+  orig: 160, 89
+  offset: 0, 0
+  index: -1
+space-cloud
+  rotate: false
+  xy: 303, 261
+  size: 251, 118
+  orig: 251, 118
+  offset: 0, 0
+  index: -1
+white-square
+  rotate: false
+  xy: 1678, 677
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1

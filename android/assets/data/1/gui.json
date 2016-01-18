@@ -1,0 +1,89 @@
+{
+    com.badlogic.gdx.graphics.g2d.BitmapFont: {
+        default-font: { file: fontDroidDefault.fnt },
+        title-font: { file: fontDroidDefault.fnt },
+        table-title-font: { file: fontDroidDefault.fnt },
+        font-bold: { file: fontDroidBorder.fnt }
+    },
+    com.badlogic.gdx.graphics.Color: {
+        green: { a: 1, b: 0, g: 1, r: 0 },
+        dark-green: { a: 1, b: 0, g: 0.5, r: 0 },
+        white: { a: 1, b: 1, g: 1, r: 1 },
+        red: { a: 1, b: 0, g: 0, r: 1 },
+        dark-red: { a: 1, b: 0, g: 0, r: 0.5 },
+        light-red: { a: 1, b: 0.3, g: 0.3, r: 1 },
+        black: { a: 1, b: 0, g: 0, r: 0 },
+        gray: { a: 1, b: 0.65, g: 0.65, r: 0.65 },
+        gray-dim: { a: 0.90, b: 0.08, g: 0.08, r: 0.08 },
+        black-dim: { a: 0.94, b: 0, g: 0, r: 0 },
+        text-dark: { a: 1, b: 1, g: 1, r: 1 },
+        text-dark-disabled: { a: 1, b: 0.50, g: 0.50, r: 0.50 },
+        text-field-dark: { a: 1, b: 0.15, g: 0.15, r: 0.15 },
+        text-light: { a: 1, b: 0, g: 0, r: 0 },
+        text-light-dark: { a: 1, b: 0, g: 0, r: 0 },
+        bright-yellow: { a: 1, b: 0, g: 1, r: 1 },
+        yellow: { a: 1, b: 0.33, g: 0.79, r: 0.83 },
+        vendido-color: { a: 0.75, b: 0.30, g: 0.90, r: 0.90 },
+        cyan: { hex: "62fdffff" },
+        dark-cyan: { hex: "05a7a7ff" },
+        purple: { hex: "d88fffff" },
+        purple-entry: { hex: "cfffe5ff" },
+        selected-shop-entry: { hex: "afff91ff" },
+        music-entry-color: { hex: "f8f8f8ff" },
+        gray-entry: { hex: "c6c8caff" },
+        shop-orange: { hex: "fea736ff" },
+        dark-orange: { hex: "d87a00ff" },
+        orange: { hex: "dbba68ff" },
+        highlight: { hex: "ffffbbff" },
+        highlight-high: { hex: "44ff44ff" },
+        bronze: { hex: "bb6b2aff" },
+        ruby: { hex: "ea302bff" },
+        gold: { hex: "e2d202ff" },
+        emerald: { hex: "7df54dff" }
+
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+        dialogDim: { name: white_pixel, color: { r: 0, g: 0, b: 0, a: 0.75 } },
+        dimBG: { name: white_pixel, color: { r: 0, g: 0, b: 0, a: 0.40 } },
+        btn_pressed: { name: btn, color: cyan },
+        icon-play-pressed: { name: icon-play, color: cyan },
+        center-ship-pressed: { name: center-ship, color: cyan },
+
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
+        default: { fontColorUnselected: text-field-dark, selection: text_selected, fontColorSelected: text-field-dark, font: default-font },
+        opaque: { fontColorUnselected: text-field-dark, selection: text_selected_opaque, fontColorSelected: text-field-dark, font: default-font }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+        default: { vScroll: scroll_vertical, hScrollKnob: scroll_horizontal_knob, background: scroll, hScroll: scroll_horizontal, vScrollKnob: scroll_vertical_knob, corner: scroll_corner },
+        opaque: { vScroll: scroll_vertical, hScrollKnob: scroll_horizontal_knob, background: scroll_opaque, hScroll: scroll_horizontal, vScrollKnob: scroll_vertical_knob, corner: scroll_corner }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+        default: { up: btn, down: btn_pressed, font: default-font, fontColor: white, downFontColor: cyan }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+        default: { imageUp: center-ship, imageDown: center-ship-pressed, imageOver: center-ship, imageDisabled: center-ship },
+        pause: { imageUp: icon-play, imageDown: icon-play-pressed, imageOver: icon-play, imageDisabled: icon-play },
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
+        default: { background: spinner_default, backgroundOver: spinner_focused, backgroundOpen: spinner_pressed, listStyle: default, scrollStyle: opaque, font: default-font, fontColor: text-field-dark }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+        default: { titleFont: title-font, titleFontColor: text-dark },
+        dialog: { titleFont: title-font, titleFontColor: text-dark }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+        default-horizontal: { background: scrubber_track, knob: scrubber_control_normal }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+        default: { font: default-font, fontColor: text-dark, background: text },
+        bold: { font: font-bold, fontColor: text-dark, background: text }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+        default: { up: text, down: btn_default_pressed, over: btn_default_focused, checked: text, checkedOver: btn_default_focused, disabled: btn_default_disabled, font: default-font, fontColor: text-dark, downFontColor: text-dark, overFontColor: text-dark, checkedFontColor: text-dark, checkedOverFontColor: text-dark, disabledFontColor: text-dark, checkboxOn: btn_check_on, checkboxOff: btn_check_off, checkboxOver: btn_check_on_focused },
+        default-radio: { up: text, down: btn_default_pressed, over: btn_default_focused, checked: text, checkedOver: btn_default_focused, disabled: btn_default_disabled, font: default-font, fontColor: text-dark, downFontColor: text-dark, overFontColor: text-dark, checkedFontColor: text-dark, checkedOverFontColor: text-dark, disabledFontColor: text-dark, checkboxOn: btn_radio_on, checkboxOff: btn_radio_off, checkboxOver: btn_radio_on_focused },
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle:  { 
+        default: { background: scrubber_track, knobBefore: scrubber_control_pgb},
+    }
+}

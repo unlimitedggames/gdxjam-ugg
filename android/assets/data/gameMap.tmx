@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-up" width="200" height="200" tilewidth="10" tileheight="10" backgroundcolor="#565656" nextobjectid="3470">
+<map version="1.0" orientation="orthogonal" renderorder="right-up" width="200" height="200" tilewidth="10" tileheight="10" backgroundcolor="#565656" nextobjectid="3484">
  <properties>
   <property name="atlas" value="game.atlas"/>
  </properties>
@@ -264,6 +264,106 @@
   <object id="3460" name="triple" type="4" gid="4" x="1354.94" y="1159.43" width="13.6862" height="14.2727"/>
  </objectgroup>
  <objectgroup name="scenario">
+  <object id="3463" type="26" gid="89" x="260.5" y="292.896" width="191" height="89.7928">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3465" type="27" gid="89" x="1551.83" y="505.563" width="246.167" height="120.896">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3466" type="26" gid="89" x="1653.5" y="689.25" width="173.724" height="67.0833">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3467" type="27" gid="89" x="1321.5" y="1605.25" width="142.5" height="62.25">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3468" type="28" gid="89" x="296.5" y="841.896" width="418.5" height="156.896">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3469" type="26" gid="89" x="176" y="1770" width="772" height="443">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3470" type="27" gid="89" x="152.5" y="222.896" width="240.5" height="172.396">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3471" type="29" gid="89" x="34.5" y="42.5" width="385" height="87">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3472" type="29" gid="89" x="460" y="80.6667" width="385" height="152">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3473" type="29" gid="89" x="956" y="99.3333" width="632" height="152">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3474" type="27" gid="89" x="1161.83" y="393.333" width="463.5" height="266.833">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3475" type="29" gid="89" x="1102.67" y="886.667" width="369.333" height="225.333">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3476" type="29" gid="89" x="866" y="2068.67" width="508" height="152">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3477" type="29" gid="89" x="1490" y="2096.67" width="566" height="258.667">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3478" type="29" gid="89" x="-98" y="2126.67" width="756" height="258.667">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3479" type="26" gid="89" x="-127.5" y="868" width="313.5" height="553">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3480" type="26" gid="89" x="-135.5" y="1818" width="239.5" height="623">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3481" type="26" gid="89" x="1894" y="1154" width="261" height="711">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3482" type="26" gid="89" x="1806" y="1620" width="303" height="381">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
+  <object id="3483" type="29" gid="89" x="1012.83" y="1282.33" width="463.5" height="266.833">
+   <properties>
+    <property name="mantenerTam" value=""/>
+   </properties>
+  </object>
   <object id="44" name="planeta5" type="4" gid="60" x="1433" y="375" width="38" height="40"/>
   <object id="136" name="planeta11" type="14" gid="76" x="396.333" y="227" width="16" height="16"/>
   <object id="178" name="m27" type="10" gid="50" x="1848.25" y="278.06" width="16" height="16"/>
@@ -693,35 +793,5 @@
   <object id="3444" name="m23" type="9" gid="50" x="209.168" y="179.33" width="16" height="16"/>
   <object id="3445" name="m25" type="10" gid="50" x="235.002" y="104.5" width="16" height="16"/>
   <object id="3446" name="m23" type="8" gid="50" x="224.335" y="243.993" width="16" height="16"/>
-  <object id="3463" type="26" gid="89" x="260.5" y="292.896" width="191" height="89.7928">
-   <properties>
-    <property name="mantenerTam" value=""/>
-   </properties>
-  </object>
-  <object id="3465" type="27" gid="89" x="1551.83" y="505.563" width="246.167" height="120.896">
-   <properties>
-    <property name="mantenerTam" value=""/>
-   </properties>
-  </object>
-  <object id="3466" type="26" gid="89" x="1653.5" y="689.25" width="173.724" height="67.0833">
-   <properties>
-    <property name="mantenerTam" value=""/>
-   </properties>
-  </object>
-  <object id="3467" type="27" gid="89" x="1321.5" y="1605.25" width="142.5" height="62.25">
-   <properties>
-    <property name="mantenerTam" value=""/>
-   </properties>
-  </object>
-  <object id="3468" type="28" gid="89" x="296.5" y="841.896" width="418.5" height="156.896">
-   <properties>
-    <property name="mantenerTam" value=""/>
-   </properties>
-  </object>
-  <object id="3469" type="26" gid="89" x="630.5" y="1287" width="418.5" height="308">
-   <properties>
-    <property name="mantenerTam" value=""/>
-   </properties>
-  </object>
  </objectgroup>
 </map>

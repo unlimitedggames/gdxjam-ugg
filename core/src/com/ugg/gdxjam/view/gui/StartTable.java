@@ -49,14 +49,15 @@ public class StartTable extends Table implements UpdatableGUI {
         Label lblTouch = new Label("Touch here to start.", skin, "bold");
         lblTouch.setAlignment(Align.center);
         this.add(lblTouch).expandX().fillX();
-
-        lblTouch.addListener(new ClickListener(){
+        ClickListener lblClickListener = new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 super.clicked(event, x, y);
                 guiCtrl.startGame();
             }
-        });
+        };
+        lblTouch.addListener(lblClickListener);
+        lblDesc.addListener(lblClickListener);
 
 
     }

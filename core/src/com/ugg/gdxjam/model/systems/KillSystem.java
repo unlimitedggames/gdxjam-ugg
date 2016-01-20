@@ -49,15 +49,18 @@ public class KillSystem extends EntitySystem {
         final KillComponent killC = Mappers.kill.get(entity);
         final WeaponsComponent weaponC = Mappers.weapon.get(entity);
         final FSMComponent fsmComponent = Mappers.fsm.get(entity);
-    	if(phyC != null){
+
+        if(fsmComponent != null)
+            entity.remove(FSMComponent.class);
+        
+        if(phyC != null){
 	    	final Body body = phyC.body;
             phyC.body.setActive(false);
     }
         if(weaponC != null){
             entity.remove(WeaponsComponent.class);
         }
-        if(fsmComponent != null)
-            entity.remove(FSMComponent.class);
+
 
         if(killC != null){
 

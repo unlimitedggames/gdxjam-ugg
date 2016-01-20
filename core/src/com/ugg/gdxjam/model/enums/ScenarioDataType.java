@@ -19,7 +19,7 @@ public enum ScenarioDataType {
     Planeta7(new ScenarioData(RenderDataType.Planeta8)),//7
 
     Meteorito1(new ScenarioData(5, RenderDataType.Meteorito1, BodyDataType.Meteorite, SoundDataType.Meteorite, Configs.meteorite, RewardDataType.MediumFuel, ParticleDataType.Meteorite)),//8
-    Meteorito2(new ScenarioData(5, RenderDataType.Meteorito2, BodyDataType.Meteorite, SoundDataType.Meteorite, Configs.meteorite, null, null)),//9
+    Meteorito2(new ScenarioData(5, RenderDataType.Meteorito2, BodyDataType.Meteorite, SoundDataType.Meteorite, Configs.meteorite, null, ParticleDataType.Meteorite)),//9
     Meteorito3(new ScenarioData(5, RenderDataType.Meteorito3, BodyDataType.Meteorite, SoundDataType.Meteorite, Configs.meteorite, RewardDataType.SmallLife, ParticleDataType.Meteorite)),//10
 
     Heart(new ScenarioData(RenderDataType.Heart)),//11
@@ -39,8 +39,9 @@ public enum ScenarioDataType {
     Ship10(new ScenarioData(RenderDataType.Ship10)),//24
     Ship11(new ScenarioData(RenderDataType.Ship11)),//25
     Cloud(new ScenarioData(RenderDataType.SpaceCloud)),//26
-    Cloud1(new ScenarioData(RenderDataType.SpaceCloud)),//27
-    Cloud2(new ScenarioData(RenderDataType.SpaceCloud));//28
+    Cloud1(new ScenarioData(RenderDataType.SpaceCloud1)),//27
+    Cloud2(new ScenarioData(RenderDataType.SpaceCloud2)),//28
+    Cloud3(new ScenarioData(RenderDataType.SpaceCloud3));//29
 
     private final ScenarioData data;
 

@@ -101,20 +101,22 @@ public enum MotherShipEnemyState implements State<GameEntity> {
 
         @Override
         public void update(GameEntity gameEntity) {
-            super.update(gameEntity);
-            IntervalComponent intervalC = Mappers.interval.get(gameEntity.entity);
-            if(intervalC != null && intervalC.tickComplete)
-                gameEntity.changeState(MotherShipEnemyState.ArriveLeft);
+            MotherShipEnemyState.updateReturn(gameEntity);
+            if(gameEntity.getCurrentState() != MotherShipEnemyState.Return) {
+                IntervalComponent intervalC = Mappers.interval.get(gameEntity.entity);
+                if (intervalC != null && intervalC.tickComplete)
+                    gameEntity.changeState(MotherShipEnemyState.ArriveLeft);
+            }
         }
 
         @Override
         public void exit(GameEntity gameEntity) {
+
             WeaponsComponent weaponC = Mappers.weapon.get(gameEntity.entity);
-            if(weaponC != null && weaponC.weapons.size > 0){
-                weaponC.weapons.get(0).enabled = false;
-                if(weaponC.weapons.size > 1)
-                    weaponC.weapons.get(1).enabled = true;
-            }
+
+            weaponC.weapons.get(0).enabled = false;
+            weaponC.weapons.get(1).enabled = true;
+
             LockOnComponent lockOnC = Mappers.lockOn.get(gameEntity.entity);
             if(lockOnC != null) {
                 lockOnC.updateTargetLocation = false;
@@ -145,11 +147,13 @@ public enum MotherShipEnemyState implements State<GameEntity> {
 
         @Override
         public void update(GameEntity gameEntity) {
-            super.update(gameEntity);
-            PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
-            Vector2 velocity = physicsC.body.getLinearVelocity();
-            if(velocity.isZero()){
-                gameEntity.changeState(MotherShipEnemyState.ArriveRight);
+            MotherShipEnemyState.updateReturn(gameEntity);
+            if(gameEntity.getCurrentState() != MotherShipEnemyState.Return) {
+                PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
+                Vector2 velocity = physicsC.body.getLinearVelocity();
+                if (velocity.isZero()) {
+                    gameEntity.changeState(MotherShipEnemyState.ArriveRight);
+                }
             }
         }
 
@@ -180,13 +184,15 @@ public enum MotherShipEnemyState implements State<GameEntity> {
 
         @Override
         public void update(GameEntity gameEntity) {
-            super.update(gameEntity);
-            PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
-            InitialPositionComponent initialPositionC = Mappers.initialPosition.get(gameEntity.entity);
-            Vector2 velocity = physicsC.body.getLinearVelocity();
-            Vector2 position = physicsC.body.getPosition();
-            if(initialPositionC != null && velocity.isZero() && position.x > initialPositionC.x){
-                gameEntity.changeState(MotherShipEnemyState.ArriveDown);
+            MotherShipEnemyState.updateReturn(gameEntity);
+            if(gameEntity.getCurrentState() != MotherShipEnemyState.Return) {
+                PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
+                InitialPositionComponent initialPositionC = Mappers.initialPosition.get(gameEntity.entity);
+                Vector2 velocity = physicsC.body.getLinearVelocity();
+                Vector2 position = physicsC.body.getPosition();
+                if (initialPositionC != null && velocity.isZero() && position.x > initialPositionC.x) {
+                    gameEntity.changeState(MotherShipEnemyState.ArriveDown);
+                }
             }
         }
 
@@ -217,13 +223,15 @@ public enum MotherShipEnemyState implements State<GameEntity> {
 
         @Override
         public void update(GameEntity gameEntity) {
-            super.update(gameEntity);
-            PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
-            InitialPositionComponent initialPositionC = Mappers.initialPosition.get(gameEntity.entity);
-            Vector2 velocity = physicsC.body.getLinearVelocity();
-            Vector2 position = physicsC.body.getPosition();
-            if(velocity.isZero() && position.y < initialPositionC.y){
-                gameEntity.changeState(MotherShipEnemyState.ArriveUp);
+            MotherShipEnemyState.updateReturn(gameEntity);
+            if(gameEntity.getCurrentState() != MotherShipEnemyState.Return) {
+                PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
+                InitialPositionComponent initialPositionC = Mappers.initialPosition.get(gameEntity.entity);
+                Vector2 velocity = physicsC.body.getLinearVelocity();
+                Vector2 position = physicsC.body.getPosition();
+                if (velocity.isZero() && position.y < initialPositionC.y) {
+                    gameEntity.changeState(MotherShipEnemyState.ArriveUp);
+                }
             }
         }
 
@@ -254,13 +262,15 @@ public enum MotherShipEnemyState implements State<GameEntity> {
 
         @Override
         public void update(GameEntity gameEntity) {
-            super.update(gameEntity);
-            PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
-            InitialPositionComponent initialPositionC = Mappers.initialPosition.get(gameEntity.entity);
-            Vector2 velocity = physicsC.body.getLinearVelocity();
-            Vector2 position = physicsC.body.getPosition();
-            if(velocity.isZero() && position.y >= initialPositionC.y -  0.5f){
-                gameEntity.changeState(MotherShipEnemyState.Shoot);
+            MotherShipEnemyState.updateReturn(gameEntity);
+            if(gameEntity.getCurrentState() != MotherShipEnemyState.Return) {
+                PhysicsComponent physicsC = Mappers.physics.get(gameEntity.entity);
+                InitialPositionComponent initialPositionC = Mappers.initialPosition.get(gameEntity.entity);
+                Vector2 velocity = physicsC.body.getLinearVelocity();
+                Vector2 position = physicsC.body.getPosition();
+                if (velocity.isZero() && position.y >= initialPositionC.y - 0.5f) {
+                    gameEntity.changeState(MotherShipEnemyState.Shoot);
+                }
             }
         }
 
@@ -312,11 +322,12 @@ public enum MotherShipEnemyState implements State<GameEntity> {
         public void exit(GameEntity gameEntity) {
 
         }
+
+
     }
     ;
 
-    @Override
-    public void update(GameEntity gameEntity) {
+    public static void updateReturn(GameEntity gameEntity){
         LockOnComponent lockOnComponent = Mappers.lockOn.get(gameEntity.entity);
         if(lockOnComponent == null){
             gameEntity.changeState(MotherShipEnemyState.Return);
@@ -339,4 +350,5 @@ public enum MotherShipEnemyState implements State<GameEntity> {
     public boolean onMessage(GameEntity gameEntity, Telegram telegram) {
         return false;
     }
+
 }

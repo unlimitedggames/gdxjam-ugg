@@ -60,6 +60,7 @@ public enum RenderDataType {
     SpaceCloud,
     SpaceCloud1,
     SpaceCloud2,
+    SpaceCloud3,
 
     ////////// REWARDS
     SmallLifePowerUp,
@@ -120,9 +121,10 @@ public enum RenderDataType {
         renderDatas.put(Ship11,new RenderData(new RenderableRegion(loader.getRegion("ship11")), 0, 0, ZIndexes.Scenario.get(), 20f, 20f, true));
 
         renderDatas.put(Heart,new RenderData(new RenderableRegion(loader.getRegion("heart")), 0, 0, ZIndexes.Scenario.get(), 20f, 20f, true));
-        renderDatas.put(SpaceCloud,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(0.8f, 0.8f, 0.9f, 0.65f)));
-        renderDatas.put(SpaceCloud1,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(1f, 1f, 0.9f, 0.55f)));
-        renderDatas.put(SpaceCloud2,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(0.8f, 0.9f, 0.7f, 0.45f)));
+        renderDatas.put(SpaceCloud,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(0.8f, 0.8f, 0.9f, 0.25f)));
+        renderDatas.put(SpaceCloud1,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(1f, 0f, 0f, 0.15f)));
+        renderDatas.put(SpaceCloud2,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(0.8f, 0.9f, 0.7f, 0.20f)));
+        renderDatas.put(SpaceCloud3,new RenderData(new RenderableRegion(loader.getRegion("space-cloud")), 0, 0, ZIndexes.Scenario.get(), 80f, 40f, true, new Color(0f, 0f, 1f, 0.25f)));
 
         ////////// REWARDS
         renderDatas.put(SmallLifePowerUp,new RenderData(new RenderableRegion(loader.getRegion("powerup")), 0, 0, ZIndexes.Reward.get(), 2.5f, 2.5f, true, new Color(0f, 0.6f, 0f, 1f)));

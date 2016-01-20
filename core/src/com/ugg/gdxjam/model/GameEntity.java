@@ -50,6 +50,8 @@ public class GameEntity implements Poolable{
 			final PositionComponent psC = Mappers.position.get(entity);
 			psC.x = x;
 			psC.y = y;
+            final RotationComponent rotC = Mappers.rotation.get(entity);
+            rotC.rotation = angle;
 		}
 		return this;
 	}
@@ -197,7 +199,7 @@ public class GameEntity implements Poolable{
         return this;
     }
 
-    public State getState(){
+    public State getCurrentState(){
         if(fsmC == null) fsmC = Mappers.fsm.get(this.entity);
         return fsmC == null? null : fsmC.stateMachine.getCurrentState();
     }

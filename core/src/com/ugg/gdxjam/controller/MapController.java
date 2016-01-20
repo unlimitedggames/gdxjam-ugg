@@ -69,7 +69,7 @@ public class MapController {
                 break;
         }
         final Object rotationObj = mapObject.getProperties().get("rotation");
-        final float rotation = rotationObj == null? 0 : (float)rotationObj;
+        final float rotation = rotationObj == null? 0 : Math.abs((float)rotationObj);
         final Object mantenerTam = mapObject.getProperties().get("mantenerTam");
         final float height = (float)mapObject.getProperties().get("height");
         OriginComponent origin = Mappers.origin.get(gameEntity.entity);

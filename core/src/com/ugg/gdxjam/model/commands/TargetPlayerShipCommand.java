@@ -28,7 +28,7 @@ public class TargetPlayerShipCommand extends Command {
         float y = (float) args.get(4);
         GameEntity gameEntity = player.mainEntity;
 
-        if(gameEntity.getState() != MainShipState.Damaged) {
+        if(gameEntity.getCurrentState() != MainShipState.Damaged) {
 
             boolean hasTarget = false;
             Array<Body> aabbFound = Box2dUtils.queryAABBInput(x, y);

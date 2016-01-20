@@ -8,9 +8,10 @@ import com.badlogic.gdx.ai.fsm.State;
 import com.badlogic.gdx.ai.fsm.StateMachine;
 import com.badlogic.gdx.ai.msg.Telegram;
 import com.badlogic.gdx.ai.msg.Telegraph;
+import com.badlogic.gdx.utils.Pool;
 import com.ugg.gdxjam.model.GameEntity;
 
-public class FSMComponent implements Component,Telegraph {
+public class FSMComponent implements Component,Telegraph, Pool.Poolable {
 
 	public DefaultStateMachine stateMachine = new DefaultStateMachine();
 
@@ -25,5 +26,10 @@ public class FSMComponent implements Component,Telegraph {
 	@Override
 	public boolean handleMessage (Telegram msg) {
 		return stateMachine.handleMessage(msg);
+	}
+
+	@Override
+	public void reset() {
+		this.stateMachine.changeState(null);
 	}
 }
